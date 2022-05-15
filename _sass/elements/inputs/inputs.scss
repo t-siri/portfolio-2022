@@ -169,6 +169,10 @@ $input-border-width: $standard-border-width;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
+
+	@include media-min(md) {
+		max-width: 600px;
+	}
 }
 
 #{$inline-text-input-types},
