@@ -39,6 +39,7 @@ body {
 		padding: $space-md;
 		height: 100vh;
 		overflow-y: scroll;
+		max-width: 1200px;
 	}
 	&.home-page {
 		grid-template-areas: "nav";

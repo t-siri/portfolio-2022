@@ -257,7 +257,7 @@ html { width: 100vw; overflow-x: hidden; scroll-behavior: smooth; background-col
 
 body { display: grid; grid-template-areas: "content nav"; grid-template-columns: 2fr 200px; height: 100vh; overflow-x: hidden; overflow-y: auto; box-sizing: border-box; scrollbar-width: 0; width: 100vw; }
 
-body .content { grid-area: content; padding: calc(2 * 1rem); height: 100vh; overflow-y: scroll; }
+body .content { grid-area: content; padding: calc(2 * 1rem); height: 100vh; overflow-y: scroll; max-width: 1200px; }
 
 body.home-page { grid-template-areas: "nav"; grid-template-columns: 1fr; }
 
@@ -507,15 +507,15 @@ a:visited { color: #f6f6f6; }
 
 .btn:focus, button:focus, .button:focus, [type="button"]:focus, [role="button"]:focus { outline: none; }
 
-.btn, button, .button, [type="button"], [role="button"] { font-family: "montserrat", "lato", Arial, Helvetica, sans-serif; font-weight: 400; white-space: nowrap; text-decoration: none; text-align: center; cursor: pointer; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; border-width: 2px; border-style: solid; grid-template-areas: "text arrow"; }
+.btn, button, .button, [type="button"], [role="button"] { font-family: "montserrat", "lato", Arial, Helvetica, sans-serif; font-weight: 400; white-space: nowrap; text-decoration: none; text-align: center; cursor: pointer; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; border-width: 2px; border-style: solid; grid-template-areas: "text arrow"; padding: 0.5rem 1rem; font-weight: 400; }
 
-.btn-text { display: flex; align-items: center; background-color: transparent; font-weight: 600; display: flex; align-items: center; color: #f6f6f6; opacity: 0.5; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
+.btn-text { font-weight: 400 !important; display: flex; align-items: center; background-color: transparent; font-weight: 600; display: flex; align-items: center; color: #f6f6f6; opacity: 0.5; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
 
 .btn-text:hover { opacity: 1; }
 
 .btn-text:active { opacity: 1; }
 
-a.btn, button, .button, [type="button"], [role="button"] { display: inline-block; }
+a.btn, button, .button, [type="button"], [role="button"] { display: inline-block; font-weight: 400; }
 
 @media (max-width: 380px) { .btn-icon-responsive-xs { font-size: 0; padding: calc(1 * 1rem); } .btn-icon-responsive-xs:before, .btn-icon-responsive-xs:after { margin: 0; vertical-align: middle; font-size: 1rem; } }
 
@@ -606,6 +606,10 @@ label, label * { font-weight: 400; color: #f6f6f6; }
 
 /* Horizontal navigation */
 nav { width: 100vh; grid-area: nav; background-color: #0f0f0f; transform: rotate(-90deg); }
+
+nav li:nth-of-type(even) a { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; animation-duration: 1s; }
+
+nav li:nth-of-type(odd) a { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; animation-duration: 1s; }
 
 nav a { cursor: pointer; }
 
@@ -966,6 +970,8 @@ hamburger and slide out navigation */
 .experience-page .experience__timeline > div .job-desc { margin-top: 0; font-size: 16px; }
 
 .work-view-page { grid-template-columns: 2fr 60px; }
+
+.work-view-page .content { max-width: unset; }
 
 .work-view-page nav ul li:not(:nth-of-type(3)) { display: none; }
 

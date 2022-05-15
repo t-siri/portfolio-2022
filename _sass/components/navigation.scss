@@ -4,7 +4,18 @@ nav {
 	grid-area: nav;
 	background-color: $color-brand-01;
 	transform: rotate(-90deg);
-
+	li {
+		&:nth-of-type(even) {
+			a {
+				@include fadeInLeft(1s);
+			}
+		}
+		&:nth-of-type(odd) {
+			a {
+				@include fadeInRight(1s);
+			}
+		}
+	}
 	a {
 		cursor: pointer;
 	}
@@ -16,15 +27,17 @@ nav {
 	.nav-home {
 		padding: $space-lg;
 		// gap: 3rem;
-		li a {
-			font-size: $text-lg;
-			&.active {
-				display: none;
-			}
-			span {
-				font-weight: $text-bold;
-				font-size: $text-xxl;
-				line-height: 1.07;
+		li {
+			a {
+				font-size: $text-lg;
+				&.active {
+					display: none;
+				}
+				span {
+					font-weight: $text-bold;
+					font-size: $text-xxl;
+					line-height: 1.07;
+				}
 			}
 		}
 	}

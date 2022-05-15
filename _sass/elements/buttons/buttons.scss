@@ -50,8 +50,11 @@ a {
 
 #{$all-button-selectors} {
 	@include standard-button;
+	padding: 0.5rem 1rem;
+	font-weight: 400;
 }
 .btn-text {
+	font-weight: 400 !important;
 	display: flex;
 	align-items: center;
 	background-color: transparent;
@@ -70,6 +73,7 @@ a {
 }
 a#{$all-button-selectors} {
 	display: inline-block;
+	font-weight: 400;
 }
 
 // --------------------------------------
