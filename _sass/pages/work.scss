@@ -21,6 +21,9 @@
         }
         &:nth-of-type(odd) {
             grid-template-areas: "info img";
+            .work-img {
+                margin-left: auto;
+            }
         }
 
         .work-img {

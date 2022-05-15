@@ -1001,6 +1001,8 @@ hamburger and slide out navigation */
 
 .work-page .work-item-wrapper:nth-of-type(odd) { grid-template-areas: "info img"; }
 
+.work-page .work-item-wrapper:nth-of-type(odd) .work-img { margin-left: auto; }
+
 .work-page .work-item-wrapper .work-img { height: 400px; width: 400px; overflow: hidden; border: 10px solid #151515; grid-area: img; }
 
 .work-page .work-item-wrapper .work-img img { height: 100%; object-fit: cover; }
