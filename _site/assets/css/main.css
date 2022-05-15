@@ -222,7 +222,7 @@ article > table { overflow-x: scroll; overflow-y: hidden; }
 samp, kbd { padding: calc(0.25 * 1rem) calc(0.5 * 1rem); margin: 0 calc(0.25 * 1rem); }
 
 /* Lists */
-dl, ol, ul { padding-left: calc(1.5 * 1rem); }
+dl, ol, ul { padding-left: calc(1.5 * 1rem); list-style-type: square; }
 
 dl dt, dl dt dd, ol li, ul li { line-height: 1.6; }
 
@@ -257,7 +257,7 @@ html { width: 100vw; overflow-x: hidden; scroll-behavior: smooth; background-col
 
 body { display: grid; grid-template-areas: "content nav"; grid-template-columns: 2fr 200px; height: 100vh; overflow-x: hidden; overflow-y: auto; box-sizing: border-box; scrollbar-width: 0; width: 100vw; }
 
-body .content { grid-area: content; padding: calc(2 * 1rem); height: 100vh; overflow-y: scroll; max-width: 1200px; }
+body .content { grid-area: content; padding: calc(2 * 1rem); height: 100vh; overflow-y: scroll; max-width: 1000px; }
 
 body.home-page { grid-template-areas: "nav content"; grid-template-columns: 1fr auto; }
 
@@ -913,7 +913,7 @@ hamburger and slide out navigation */
 
 .page-title .title-desc .subtitle { line-height: 2.3; }
 
-.about-page .content .about__desc { display: grid; grid-template-areas: "short info" "skilltitle skilltitle"; grid-template-columns: 0.4fr 1fr; margin: 3rem 0 0; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+.about-page .content .about__desc { display: grid; grid-template-areas: "short info" "skilltitle skilltitle"; grid-template-columns: auto 1fr; margin: 3rem 0 0; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
 
 .about-page .content .about__desc .short-desc { grid-area: short; }
 
@@ -951,7 +951,7 @@ hamburger and slide out navigation */
 
 .about-page .content .about__skillsets > div .skills p { grid-area: p; width: 100%; }
 
-.about-page .content .about__skillsets > div .skills ul { margin-top: 0; list-style-type: square; }
+.about-page .content .about__skillsets > div .skills ul { margin-top: 0; }
 
 .about-page .content .about__skillsets > div .skills ul:first-of-type { grid-area: ul1; }
 

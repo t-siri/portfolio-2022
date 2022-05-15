@@ -33,6 +33,11 @@
             overflow: hidden;
             border: 10px solid $grey-6;
             grid-area: img;
+            // @include transform-timing(1s);
+            // &:hover {
+            //     background-color: $color-brand-01;
+            //     width: 80vw;
+            // }
             img {
                 height: 100%;
                 object-fit: cover;
