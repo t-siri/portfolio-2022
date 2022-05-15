@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+    {% include common/head.html %}
+</head>
+
+<body class="work-view-page">
+    {% include common/navigation.html %}
+    <main class="content">
+        <a class="btn-text" href="/work">
+            <span style="margin-right: 10px;" class="material-symbols-outlined">
+                arrow_back
+            </span><span>Back</span>
+        </a>
+        <div class="header">
+            {{page.type}}
+            <p class="h2">{{page.title}}</p>
+        </div>
+        {% if page.type=='Design'%}
+        {% include common/des-setup.html %}
+        {% endif %}
+        {% if page.type=='Development'%}
+        {% include common/dev-setup.html %}
+        {% endif %}
+        <br> <br>
+        {{content}}
+    </main>
+</body>
+{% include common/footer.html %}
+
+</html>

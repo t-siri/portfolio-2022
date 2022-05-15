@@ -1,0 +1,68 @@
+---
+permalink: /contact
+title: Contact
+number: '05'
+title: Contact
+subtitle: Write to me
+---
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+	{% include common/head.html %}
+</head>
+
+<body class="contact-page">
+	<main class="content">
+
+		{% include common/title-layout.html %}
+		<div>
+
+			<div class="form">
+				<p>You can contact me via <a class="linked-in"
+						href="https://www.linkedin.com/in/toy-sirichindakul">LinkedIn</a>, or use the contact
+					form. </p>
+				<p>Please make sure to enter your email in the form, so I can reply to you.</p>
+				<form name="contact" netlify method="POST" data-netlify="true">
+					<div class="input-group input-group--text">
+						<label for='email'>
+							<span>Your email</span>
+							<input id="email" type="email" name="email" placeholder="Valid Email Address" />
+						</label>
+					</div>
+					<div class="input-group input-group--textarea">
+						<label for='message'>
+							<span>Message</span>
+							<textarea id="message" name="message" placeholder="Your Message"></textarea>
+						</label>
+					</div>
+
+					<button style="display: flex; align-items: center;" class="btn btn-text" id="form-submit"
+						type="submit"> Send it <span style="margin-left: 10px;" class="material-symbols-outlined">
+							send
+						</span></button>
+				</form>
+
+			</div>
+			<div class="submit-message">
+				<h4>Thanks for messaging me! I'll get back to you as soon as I can.</h4>
+
+			</div>
+		</div>
+	</main>
+	{% include common/navigation.html %}
+
+</body>
+{% include common/footer.html %}
+<script>
+	function formSubmit() {
+		var submit = document.getElementById("form-submit");
+		var contactForm = document.getElementById("contact-form");
+		submit.addEventListener('click', function () {
+			contactForm.classList.add('submitted');
+		});
+	}
+	formSubmit();
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+.page-title {
+    display: flex;
+    align-items: center;
+    height: max-content;
+    @include fadeInDown(1s);
+    .number {
+        font-weight: $text-bold;
+        font-size: 8rem;
+        margin-right: 2rem;
+    }
+    .title-desc {
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-weight: $text-bold;
+            font-size: $text-xl;
+        }
+        .subtitle {
+            line-height: 2.3;
+        }
+    }
+}

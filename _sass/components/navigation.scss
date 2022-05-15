@@ -1,0 +1,98 @@
+/* Horizontal navigation */
+nav {
+	width: 100vh;
+	grid-area: nav;
+	background-color: $color-brand-01;
+	transform: rotate(-90deg);
+
+	a {
+		cursor: pointer;
+	}
+
+	&.fixed {
+		@include transform-timing(0.15s);
+	}
+
+	.nav-home {
+		padding: $space-lg;
+		// gap: 3rem;
+		li a {
+			font-size: $text-lg;
+			&.active {
+				display: none;
+			}
+			span {
+				font-weight: $text-bold;
+				font-size: $text-xxl;
+				line-height: 1.07;
+			}
+		}
+	}
+
+	.nav-page {
+		height: 100%;
+		padding: 0 $space-lg;
+		gap: 0.4rem;
+		li {
+			a {
+				&.active {
+					display: none;
+				}
+				&.inactive {
+				}
+			}
+		}
+	}
+
+	ul {
+		width: 100%;
+		list-style: none;
+		align-items: center;
+		flex-direction: column;
+		display: flex;
+		li {
+			opacity: 0.4;
+			@include transform-timing(0.5s);
+			&:hover {
+				opacity: 1;
+			}
+			width: 100%;
+			@include media-min(smd) {
+				.home {
+					display: none;
+				}
+			}
+
+			a {
+				display: flex;
+				align-items: flex-end;
+				text-decoration: none;
+				justify-content: space-between;
+				color: $color-primary;
+				&:hover,
+				&:active,
+				&:focus {
+					@include transform-timing($quick-animation-time);
+				}
+
+				&.active {
+					font-weight: bold;
+					font-size: $text-lg;
+
+					@include media(smd) {
+						&:before {
+							display: none;
+						}
+					}
+				}
+
+				&.inactive {
+				}
+			}
+		}
+	}
+}
+
+p a {
+	@include transform-timing(0.5s);
+}

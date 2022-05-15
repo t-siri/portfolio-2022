@@ -1,0 +1,60 @@
+/* --------------------------------
+Colours
+-------------------------------- */
+/* 
+_colors.scss is the base on setting up your colour variables in your target project
+Set your target colours but do not remove variables that you do not plan to use.
+*/
+
+/* Colour variables */
+
+$color-shades: 15%;
+$color-alpha: 0.8%;
+$color-shadow: 0.2%;
+
+/* Main colors */
+
+/* -------------------------------------------------*/
+/* ----------Pick your brand colours here ----------*/
+/* -------------------------------------------------*/
+$color-primary: rgba(246, 246, 246, 1); // #272727
+$color-secondary: rgba(21, 21, 21, 1); // #ffffff
+
+$color-brand-01: rgba(15, 15, 15, 1); // #FFE7D0
+
+// Map of the colour names used above for looping purposes
+$color-list: (
+	primary: $color-primary,
+	secondary: $color-secondary,
+	brand-01: $color-brand-01,
+);
+
+// Functions to source a colours various shades and tints
+@function lighten-color($color) {
+	@return lighten($color, $color-shades);
+}
+
+@function darken-color($color) {
+	@return darken($color, $color-shades);
+}
+
+@function get-bg-color($color) {
+	@return rgba($color, $color-alpha);
+}
+
+// shades - generated using chroma.js - 12 steps https://gka.github.io/palettes/#colors=#121230,#f5f5f5%7Csteps=11%7Cbez=1%7CcoL=1
+$black: $color-secondary;
+$grey-7: #2e2e2e;
+$grey-6: #151515;
+$grey-5: #696969;
+$grey-4: #aba9b5;
+$grey-3: #c3c1ca;
+$grey-2: #dcdbdf;
+$grey-1: #f5f5f5; // This is the reverse accent. Currently called "Noise"
+$white: $color-primary;
+
+// Base text colors
+// Used in the map below
+// !! never reference these variables directly !! Their primary use is in the color contrast checker functions
+$color-text-dark: $color-primary;
+$color-text-light: $black;

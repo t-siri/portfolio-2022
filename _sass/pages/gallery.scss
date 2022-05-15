@@ -1,0 +1,65 @@
+.gallery-page {
+    h2,
+    .blurb {
+        text-align: center;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInDown(2s);
+    }
+    .blurb {
+        margin-bottom: $space-lg;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        @include fadeInDown(2s);
+    }
+    section.creative-gallery {
+        display: flex;
+        margin: 0 auto;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        @include media(md) {
+            max-width: calc(100vw - 3rem - 3rem);
+        }
+        .gallery-image {
+            opacity: 0;
+            animation-fill-mode: forwards;
+            @include fadeInUp(2s);
+            animation-delay: 0.2s;
+            @include media(xsm) {
+                margin: $space-xxs auto;
+                left: unset !important;
+            }
+            overflow: hidden;
+            align-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            float: left;
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+            margin-right: $space-xs;
+            margin-bottom: $space-xs;
+            img {
+                border: 2px solid $color-primary;
+                padding: 5px;
+                opacity: 0;
+                &.scroll-animation-true {
+                    animation-fill-mode: forwards;
+                    @include fadeInUp(1.5s);
+                }
+                width: 100%;
+                height: auto;
+                max-width: 290px;
+                @include media(smd) {
+                    max-width: 25vw;
+                }
+                @include media(xsm) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

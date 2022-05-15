@@ -1,0 +1,45 @@
+- name: YouTrumpet
+  type: Design
+  url: /work-you-trumpet
+  img: yt-1
+  desc: YouTrumpet is a company in America that focuses heavily on community driven campaigns. The goal of the business is to self promote campaigns that individuals are passionate about.
+- name: Ross Alan
+  type: Design
+  url: /work-ross-alan
+  img: ra
+  desc: Ross Alan owns a well established wood working company in Los Angeles and he wanted to work on re-branding his company.
+- name: Solaris
+  type: Design & Development
+  url: /work-solaris
+  img: solaris-1
+  desc: During my employment with WorkingMouse, I had the opportunity as a UIX Engineer to work with Codebots and standardised the company’s front-end process. I Developed an online Design system for employees to refer to the company’s branding and Design rules.
+- name: Carted
+  type: Design & Development
+  url: /work-carted
+  img: carted-1
+  desc: Carted is a side project I have founded and is a current work in progress in regards to Development.
+- name: Codebots V2
+  type: Development
+  url: /work-codebots-v2
+  img: codebots-mktgv2-1
+  desc: After deploying the MVP of version 1, the company had the opportunity to do some user testing and user research to further improve the marketing site in order to get more tractions.
+- name: Codebots V1
+  type: Development
+  url: /work-codebots-v1
+  img: codebots-mktg-1
+  desc: During my employment with WorkingMouse I had the opportunity to work with Codebots and Developed Codebots marketing website.
+- name: Kindred Client
+  type: Design & Development
+  url: /work-kindred-client
+  img: kindred-client-1
+  desc: I had the opportunity as a Product Designer to work with Kindred, a client in the real-estate space. The client came to WorkingMouse with an underlying problem in the industry’s workflow, which resulted into a client portal.
+- name: Kindred Admin
+  type: Design
+  url: /work-kindred-admin
+  img: kindred-admin-1
+  desc: Our client previously scoped with us in regards to the Green Zone Portal, and given on how successfully the outcome of the previous scope was, our clients wanted to further proceed on expanding the portal for Admin users.
+- name: Harmony
+  type: Design & Development
+  url: /work-harmony
+  img: harmony-1
+  desc: Harmony is a library with standardised and documented HTML and SCSS that is shared across both bots in Codebots. What these bots provide from Codebots is a quick kickstart to an application, providing simple components alongside complex components (extensions).

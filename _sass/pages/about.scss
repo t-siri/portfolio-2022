@@ -1,0 +1,122 @@
+.about-page {
+    .content {
+        .about__desc {
+            display: grid;
+            grid-template-areas:
+                "short info"
+                "skilltitle skilltitle";
+            grid-template-columns: 0.4fr 1fr;
+            margin: 3rem 0 0;
+            @include fadeInUp(1s);
+            .short-desc {
+                grid-area: short;
+                p {
+                    display: flex;
+                }
+                span {
+                    margin-right: 8px;
+                }
+                .img-avatar-wrapper {
+                    border: 10px solid $grey-6;
+                    grid-area: img;
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .desc {
+                grid-area: info;
+                padding: 0 2rem;
+            }
+            .skillsets-heading {
+                grid-area: skilltitle;
+                margin-top: 5rem;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                &:before {
+                    content: "";
+                    width: calc(100% - 120px);
+                    height: 6px;
+                    background-color: $grey-7;
+                }
+            }
+        }
+
+        .about__skillsets {
+            margin-left: 80px;
+            > div {
+                padding: 3rem 0;
+                position: relative;
+                opacity: 1;
+                &:after {
+                    height: 100%;
+                    content: "";
+                    width: 10px;
+                    background-color: $grey-6;
+                    position: absolute;
+                    z-index: -2;
+                    left: -60px;
+                    top: 70px;
+                }
+                &:last-of-type {
+                    &:after {
+                        display: none;
+                    }
+                }
+                &.scroll-animation-false {
+                    opacity: 0;
+                }
+                &.scroll-animation-true {
+                    @include fadeInUp(1s);
+                }
+                .skill {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-color: $grey-7;
+                        border: 5px solid $grey-6;
+                        display: block;
+                        position: absolute;
+                        left: -75px;
+                    }
+                }
+                .skills {
+                    display: grid;
+                    grid-template-areas:
+                        "p p"
+                        "ul1 ul2";
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto 1fr;
+                    p {
+                        grid-area: p;
+                        width: 100%;
+                    }
+
+                    ul {
+                        margin-top: 0;
+                        list-style-type: square;
+
+                        &:first-of-type {
+                            grid-area: ul1;
+                        }
+                        &:last-of-type {
+                            grid-area: ul2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

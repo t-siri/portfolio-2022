@@ -1,0 +1,27 @@
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 0;
+    background: transparentize(get-contrasting-text-color($color-brand-01), 0.5);
+    -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: transparentize(get-contrasting-text-color($color-brand-01), 0.5);
+}

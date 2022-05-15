@@ -1,0 +1,41 @@
+---
+permalink: /experience
+number: '01'
+title: Journey
+subtitle: Work experience and career
+---
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+	{% include common/head.html %}
+</head>
+
+<body class="experience-page">
+	{% include common/navigation.html %}
+
+	<main class="content">
+		{% include common/title-layout.html %}
+
+		<div class="experience__timeline">
+			{% for item in site.data.experience %}
+			<div class="scroll-animation-false">
+				<p class="h3 date">
+					{{ item.date }}
+				</p>
+
+				<p class="job-title">
+					{{ item.title }} at <a href="{{item.complink}}" target="_blank">{{item.company}}</a>
+				</p>
+
+				<p class="job-desc">
+					{{item.description}}
+				</p>
+			</div>
+			{% endfor %}
+		</div>
+	</main>
+</body>
+{% include common/footer.html %}
+
+</html>

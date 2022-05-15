@@ -1,0 +1,87 @@
+<div class="work-view__content-wrapper work-view__content-wrapper-1 scroll-animation-false">
+    <div>
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img1 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img2 | replace: '..', site.baseurl}}.png">
+        </div>
+    </div>
+    <div class="description">
+        <p class="h3">Introduction</p>
+        <div class="work-desc">{% contentblock introduction %}</div>
+    </div>
+</div>
+<div class="work-view__content-wrapper work-view__content-wrapper-2 scroll-animation-false">
+
+    <div class="description">
+        <p class="h3">Understand & refine</p>
+        <div class="work-desc">{% contentblock problem %}</div>
+    </div>
+    <div>
+        <div class="img-wrapper ">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img4 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="img-wrapper ">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img5 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="img-wrapper">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img3 | replace: '..', site.baseurl}}.png">
+        </div>
+    </div>
+</div>
+<div class="work-view__content-wrapper work-view__content-wrapper-3 scroll-animation-false">
+    <div>
+        <div class="img-wrapper ">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img5 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="img-wrapper ">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img6 | replace: '..', site.baseurl}}.png">
+        </div>
+    </div>
+    <div class="description">
+        <p class="h3">Ideate & refine</p>
+        <div class="work-desc">{% contentblock solution %}</div>
+    </div>
+</div>
+<div class="work-view__content-wrapper work-view__content-wrapper-4 scroll-animation-false">
+
+    <div class="description">
+        <p class="h3">Build, test & re-iterate</p>
+        <div class="work-desc">{% contentblock outcome %}</div>
+    </div>
+    <div>
+        <div class="img-wrapper ">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img7 | replace: '..', site.baseurl}}.png">
+        </div>
+        <div class="img-wrapper ">
+            <img src="{{site.baseurl}}/assets/img/work/{{page.img2 | replace: '..', site.baseurl}}.png">
+        </div>
+    </div>
+</div>
+
+{% if page.Development==true%}
+<div class="work-view__content-wrapper work-view__content-wrapper-5 dev">
+    <div class="img-wrapper ">
+        <img src="{{site.baseurl}}/assets/img/work/{{page.img8 | replace: '..', site.baseurl}}.png">
+    </div>
+    <div class="description">
+        <p class="h3">Development</p>
+        <div class="work-desc">{% contentblock development %}</div>
+    </div>
+</div>
+{% endif %}
+<!-- 
+    for img zoom
+<div class="img-wrapper ">
+    <div class="img-zoom inactive">
+        <img src="{{site.baseurl}}/assets/img/work/{{page.img1 | replace: '..', site.baseurl}}.png">
+        <span class="btn btn-toggle__img1 btn--solid btn--primary show-text icon-look icon-only">
+        </span>
+    </div>
+    <div class="img-zoom inactive">
+        <img src="{{site.baseurl}}/assets/img/work/{{page.img2 | replace: '..', site.baseurl}}.png">
+        <span class="btn btn-toggle__img2 btn--solid btn--primary show-text icon-look icon-only">
+        </span>
+    </div>
+</div> -->

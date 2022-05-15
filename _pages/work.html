@@ -1,0 +1,56 @@
+---
+permalink: /work
+title: Work
+number: '02'
+title: Craft
+subtitle: Design and development projects throughout my career
+---
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+	{% include common/head.html %}
+</head>
+
+<body class="work-page">
+	{% include common/navigation.html %}
+
+	<main class="content">
+
+		{% include common/title-layout.html %}
+		{% for item in site.data.work %}
+		<a class="" href="{{item.url}}">
+			<div class="work-item-wrapper scroll-animation-false">
+				<div class="work-img">
+					<img src="/assets/img/work/{{ item.img }}.png" alt="{{ item.name}} image">
+				</div>
+				<div class="work-info">
+					<div class="work-top-section">
+						<p class="work-type">
+							{{ item.type }}
+						</p>
+
+						<h3>{{item.name}}</h3>
+					</div>
+
+					<div class="work-bottom-section">
+						<p class="work-description">
+							{{item.desc}}
+						</p>
+						<a class="btn-text" href="{{item.url}}">
+							<span>Have a peek</span>
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</a>
+		{% endfor %}
+
+	</main>
+</body>
+{% include common/footer.html %}
+
+</html>

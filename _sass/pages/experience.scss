@@ -1,0 +1,55 @@
+.experience-page {
+    .experience__timeline {
+        padding-left: 6rem;
+        > div {
+            padding: 3rem 0;
+            position: relative;
+            opacity: 1;
+            &:after {
+                height: 100%;
+                content: "";
+                width: 10px;
+                background-color: $grey-6;
+                position: absolute;
+                z-index: -2;
+                left: -60px;
+                top: 45px;
+            }
+            &:last-of-type {
+                &:after {
+                    display: none;
+                }
+            }
+            &.scroll-animation-false {
+                opacity: 0;
+            }
+            &.scroll-animation-true {
+                @include fadeInUp(1s);
+            }
+            .date {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+                &:before {
+                    content: "";
+                    width: 30px;
+                    height: 30px;
+                    background-color: $grey-7;
+                    border: 5px solid $grey-6;
+                    display: block;
+                    position: absolute;
+                    left: -75px;
+                }
+            }
+            .job-title {
+                margin: 0;
+                font-size: 22px;
+            }
+
+            .job-desc {
+                margin-top: 0;
+                font-size: 16px;
+            }
+        }
+    }
+}
