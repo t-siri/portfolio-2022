@@ -50,6 +50,12 @@
         //     grid-template-areas: "img2 info";
         // }
         // $imgwrapperlist: 1, 2, 3, 4;
+        &.scroll-animation-false {
+            opacity: 0;
+        }
+        &.scroll-animation-true {
+            @include fadeInUp(1s);
+        }
         .img-wrapper {
             width: 50vw;
             display: flex;

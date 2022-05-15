@@ -977,6 +977,10 @@ hamburger and slide out navigation */
 
 .work-view-page .work-view__content-wrapper .h3 { font-weight: 400; }
 
+.work-view-page .work-view__content-wrapper.scroll-animation-false { opacity: 0; }
+
+.work-view-page .work-view__content-wrapper.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+
 .work-view-page .work-view__content-wrapper .img-wrapper { width: 50vw; display: flex; margin: 2rem 0; height: auto; }
 
 .work-view-page .work-view__content-wrapper .img-wrapper img { object-fit: contain; width: 100%; }
