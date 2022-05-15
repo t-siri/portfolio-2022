@@ -259,9 +259,17 @@ body { display: grid; grid-template-areas: "content nav"; grid-template-columns:
 
 body .content { grid-area: content; padding: calc(2 * 1rem); height: 100vh; overflow-y: scroll; max-width: 1200px; }
 
-body.home-page { grid-template-areas: "nav"; grid-template-columns: 1fr; }
+body.home-page { grid-template-areas: "nav content"; grid-template-columns: 1fr auto; }
 
-body.home-page .content { display: none; padding: 0; }
+body.home-page .content { align-items: center; display: flex; margin: 0 auto; overflow: hidden; padding: 0; }
+
+body.home-page .content .work-item-wrapper { grid-template-areas: "img" "info"; grid-template-columns: 1fr 0.2fr; }
+
+body.home-page .content .work-item-wrapper .work-img { width: 40vw; height: auto; }
+
+body.home-page .content .work-item-wrapper .work-img img { height: auto; width: 100%; }
+
+body.home-page .content .work-item-wrapper .work-info { padding-left: 0; }
 
 body .nav__logo-mobile { display: none; }
 
@@ -997,29 +1005,29 @@ hamburger and slide out navigation */
 
 .work-view-page .work-view__content-wrapper:nth-of-type(odd) .description { padding: 2rem 2rem 2rem 0; }
 
-.work-page .work-item-wrapper { display: grid; grid-template-areas: "img info"; grid-template-columns: 1fr 1fr; margin: 3rem 0; align-items: center; opacity: 0.7; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
+.work-page .work-item-wrapper, .home-page .work-item-wrapper { display: grid; grid-template-areas: "img info"; grid-template-columns: 1fr 1fr; margin: 3rem 0; align-items: center; opacity: 0.7; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; }
 
-.work-page .work-item-wrapper:hover { opacity: 1; }
+.work-page .work-item-wrapper:hover, .home-page .work-item-wrapper:hover { opacity: 1; }
 
-.work-page .work-item-wrapper * { color: #f6f6f6; }
+.work-page .work-item-wrapper *, .home-page .work-item-wrapper * { color: #f6f6f6; }
 
-.work-page .work-item-wrapper.scroll-animation-false { opacity: 0; }
+.work-page .work-item-wrapper.scroll-animation-false, .home-page .work-item-wrapper.scroll-animation-false { opacity: 0; }
 
-.work-page .work-item-wrapper.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+.work-page .work-item-wrapper.scroll-animation-true, .home-page .work-item-wrapper.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
 
-.work-page .work-item-wrapper:nth-of-type(odd) { grid-template-areas: "info img"; }
+.work-page .work-item-wrapper:nth-of-type(odd), .home-page .work-item-wrapper:nth-of-type(odd) { grid-template-areas: "info img"; }
 
-.work-page .work-item-wrapper:nth-of-type(odd) .work-img { margin-left: auto; }
+.work-page .work-item-wrapper:nth-of-type(odd) .work-img, .home-page .work-item-wrapper:nth-of-type(odd) .work-img { margin-left: auto; }
 
-.work-page .work-item-wrapper .work-img { height: 400px; width: 400px; overflow: hidden; border: 10px solid #151515; grid-area: img; }
+.work-page .work-item-wrapper .work-img, .home-page .work-item-wrapper .work-img { height: 400px; width: 400px; overflow: hidden; border: 10px solid #151515; grid-area: img; }
 
-.work-page .work-item-wrapper .work-img img { height: 100%; object-fit: cover; }
+.work-page .work-item-wrapper .work-img img, .home-page .work-item-wrapper .work-img img { height: 100%; object-fit: cover; }
 
-.work-page .work-item-wrapper .work-info { grid-area: info; padding: 0 2rem; }
+.work-page .work-item-wrapper .work-info, .home-page .work-item-wrapper .work-info { grid-area: info; padding: 0 2rem; }
 
-.work-page .work-item-wrapper .work-info .work-top-section .work-type { margin-bottom: 0; }
+.work-page .work-item-wrapper .work-info .work-top-section .work-type, .home-page .work-item-wrapper .work-info .work-top-section .work-type { margin-bottom: 0; }
 
-.work-page .work-item-wrapper .work-info .work-top-section h3 { font-size: 3rem; }
+.work-page .work-item-wrapper .work-info .work-top-section h3, .home-page .work-item-wrapper .work-info .work-top-section h3 { font-size: 3rem; }
 
 .gallery-page h2, .gallery-page .blurb { text-align: center; opacity: 0; animation-fill-mode: forwards; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; animation-duration: 2s; }
 

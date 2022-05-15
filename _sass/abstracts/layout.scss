@@ -42,11 +42,29 @@ body {
 		max-width: 1200px;
 	}
 	&.home-page {
-		grid-template-areas: "nav";
-		grid-template-columns: 1fr;
+		grid-template-areas: "nav content";
+		grid-template-columns: 1fr auto;
 		.content {
-			display: none;
+			align-items: center;
+			display: flex;
+			margin: 0 auto;
+			overflow: hidden;
 			padding: 0;
+			.work-item-wrapper {
+				grid-template-areas: "img" "info";
+				grid-template-columns: 1fr 0.2fr;
+				.work-img {
+					width: 40vw;
+					height: auto;
+					img {
+						height: auto;
+						width: 100%;
+					}
+				}
+				.work-info {
+					padding-left: 0;
+				}
+			}
 		}
 	}
 	//only display for ipads and mobiles

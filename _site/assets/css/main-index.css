@@ -259,9 +259,17 @@ body { display: grid; grid-template-areas: "content nav"; grid-template-columns:
 
 body .content { grid-area: content; padding: calc(2 * 1rem); height: 100vh; overflow-y: scroll; max-width: 1200px; }
 
-body.home-page { grid-template-areas: "nav"; grid-template-columns: 1fr; }
+body.home-page { grid-template-areas: "nav content"; grid-template-columns: 1fr auto; }
 
-body.home-page .content { display: none; padding: 0; }
+body.home-page .content { align-items: center; display: flex; margin: 0 auto; overflow: hidden; padding: 0; }
+
+body.home-page .content .work-item-wrapper { grid-template-areas: "img" "info"; grid-template-columns: 1fr 0.2fr; }
+
+body.home-page .content .work-item-wrapper .work-img { width: 40vw; height: auto; }
+
+body.home-page .content .work-item-wrapper .work-img img { height: auto; width: 100%; }
+
+body.home-page .content .work-item-wrapper .work-info { padding-left: 0; }
 
 body .nav__logo-mobile { display: none; }
 
