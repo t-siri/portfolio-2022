@@ -47,6 +47,11 @@ nav {
 					line-height: 1.07;
 				}
 			}
+			@include media-min(smd) {
+				&:last-of-type {
+					display: none;
+				}
+			}
 		}
 	}
 

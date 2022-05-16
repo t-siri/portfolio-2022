@@ -642,6 +642,8 @@ nav .nav-home li a.active { display: none; }
 
 nav .nav-home li a span { font-weight: 700; font-size: calc(0.9rem * (1.6 * 1.6 * 1.6 * 1.6)); line-height: 1.07; }
 
+@media (min-width: 950px) { nav .nav-home li:last-of-type { display: none; } }
+
 nav .nav-page { height: 100%; padding: 0 calc(3 * 1rem); gap: 0.4rem; }
 
 nav .nav-page li a.active { display: none; }
@@ -920,5 +922,12 @@ hamburger and slide out navigation */
 .img-zoom.active .btn:before { mask: url(/assets/icon/x.svg); -webkit-mask: url(/assets/icon/x.svg); }
 
 /* Home page */
+.home-page .work-item-wrapper { -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; display: grid; grid-template-areas: "img" "info"; grid-template-columns: 1fr; }
+
+.home-page .work-item-wrapper .work-img { width: 40vw; height: auto; border: none; }
+
+.home-page .work-item-wrapper .work-img img { width: 100%; height: auto; }
+
+.home-page .work-item-wrapper .work-info { padding: 0; }
 
 /*# sourceMappingURL=main-index.css.map */
