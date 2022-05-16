@@ -255,7 +255,9 @@ html { width: 100vw; overflow-x: hidden; scroll-behavior: smooth; background-col
 
 @media (max-width: 950px) { html.nav-active, html.nav-active body { overflow: hidden; } }
 
-body { display: grid; grid-template-areas: "content nav"; grid-template-columns: 2fr 200px; height: 100vh; overflow-x: hidden; overflow-y: auto; box-sizing: border-box; scrollbar-width: 0; width: 100vw; }
+body { display: grid; grid-template-areas: "content nav"; grid-template-columns: 2fr 200px; height: 100vh; scrollbar-width: 0; width: 100vw; overflow-x: hidden; box-sizing: border-box; }
+
+@media (min-width: 950px) { body { overflow-y: auto; } }
 
 body .content { grid-area: content; padding: calc(2 * 1rem); height: calc(var(--vh, 1vh) * 100); overflow-y: scroll; max-width: 1200px; }
 
