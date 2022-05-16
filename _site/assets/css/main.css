@@ -1011,13 +1011,11 @@ hamburger and slide out navigation */
 
 .experience-page .experience__timeline > div .job-desc { margin-top: 0; font-size: 16px; }
 
-.work-view-page { grid-template-columns: 2fr 60px; }
-
 @media (max-width: 950px) { .work-view-page { grid-template-columns: 1fr; } }
 
 .work-view-page .content { max-width: unset; }
 
-.work-view-page nav ul li:not(:nth-of-type(1)) { display: none; }
+.work-view-page nav ul li:nth-of-type(3) { display: none; }
 
 .work-view-page .btn-text { margin: 3rem 0; }
 
