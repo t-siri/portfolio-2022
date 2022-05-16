@@ -8,6 +8,14 @@
             grid-template-columns: auto 1fr;
             margin: 3rem 0 0;
             @include fadeInUp(1s);
+
+            @include media(smd) {
+                grid-template-areas:
+                    "short"
+                    "info"
+                    "skilltitle";
+                grid-template-columns: 1fr;
+            }
             .short-desc {
                 grid-area: short;
                 p {
@@ -24,15 +32,26 @@
                     overflow: hidden;
                     display: flex;
                     justify-content: center;
+                    @include media(smd) {
+                        width: 100%;
+                        height: auto;
+                    }
                     img {
                         height: 200px;
                         object-fit: cover;
+                        @include media(smd) {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
                 }
             }
             .desc {
                 grid-area: info;
                 padding: 0 2rem;
+                @include media(smd) {
+                    padding: 0;
+                }
             }
             .skillsets-heading {
                 grid-area: skilltitle;
@@ -99,6 +118,14 @@
                         "ul1 ul2";
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: auto 1fr;
+
+                    @include media(smd) {
+                        grid-template-areas:
+                            "p"
+                            "ul1"
+                            "ul2";
+                        grid-template-columns: 1fr;
+                    }
                     p {
                         grid-area: p;
                         width: 100%;

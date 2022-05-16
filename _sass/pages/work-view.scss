@@ -1,5 +1,8 @@
 .work-view-page {
     grid-template-columns: 2fr 60px;
+    @include media(smd) {
+        grid-template-columns: 1fr;
+    }
     .content {
         max-width: unset;
     }
@@ -12,6 +15,9 @@
     }
     .btn-text {
         margin: 3rem 0;
+        @include media(smd) {
+            margin: 0 0 3rem;
+        }
     }
     .header {
         animation-fill-mode: forwards;
@@ -28,6 +34,9 @@
         }
         display: flex;
         align-items: center;
+        @include media(smd) {
+            align-items: center;
+        }
         // display: grid;
         // &-1 {
         //     grid-template-areas:
@@ -63,8 +72,12 @@
             width: 50vw;
             display: flex;
             margin: 2rem 0;
-
             height: auto;
+
+            @include media(smd) {
+                width: 100%;
+                height: auto;
+            }
             img {
                 object-fit: contain;
                 width: 100%;
@@ -76,15 +89,27 @@
             // }
         }
         &:nth-of-type(even) {
+            @include media(smd) {
+                flex-direction: column;
+            }
             .description {
                 // grid-area: info;
                 padding: 2rem 0 2rem 2rem;
+                @include media(smd) {
+                    padding: 0;
+                }
             }
         }
         &:nth-of-type(odd) {
+            @include media(smd) {
+                flex-direction: column-reverse;
+            }
             .description {
                 // grid-area: info;
                 padding: 2rem 2rem 2rem 0;
+                @include media(smd) {
+                    padding: 0;
+                }
             }
         }
     }

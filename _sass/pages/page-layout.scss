@@ -3,6 +3,10 @@
     align-items: center;
     height: max-content;
     @include fadeInDown(1s);
+    @include media(smd) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .number {
         font-weight: $text-bold;
         font-size: 8rem;
@@ -14,9 +18,15 @@
         .title {
             font-weight: $text-bold;
             font-size: $text-xl;
+            @include media(smd) {
+                font-size: 2rem;
+            }
         }
         .subtitle {
             line-height: 2.3;
+            @include media(smd) {
+                line-height: 1.5;
+            }
         }
     }
 }

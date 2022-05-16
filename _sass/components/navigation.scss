@@ -1,9 +1,14 @@
 /* Horizontal navigation */
+.nav-wrapper {
+}
 nav {
-	width: 100vh;
-	grid-area: nav;
 	background-color: $color-brand-01;
 	transform: rotate(-90deg);
+	grid-area: nav;
+	width: 100vh;
+	@include media(smd) {
+		transform: rotate(0deg);
+	}
 	li {
 		&:nth-of-type(even) {
 			a {
@@ -26,6 +31,9 @@ nav {
 
 	.nav-home {
 		padding: $space-lg;
+		@include media(smd) {
+			padding: 0;
+		}
 		// gap: 3rem;
 		li {
 			a {
@@ -65,8 +73,12 @@ nav {
 		display: flex;
 		li {
 			opacity: 0.4;
+			@include media(smd) {
+				opacity: 0.8;
+			}
 			@include transform-timing(0.5s);
-			&:hover {
+			&:hover,
+			&:active {
 				opacity: 1;
 			}
 			width: 100%;

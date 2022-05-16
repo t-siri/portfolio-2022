@@ -73,6 +73,19 @@ Here are the keyframes, to organise wehre keyframes go. it is ideal to use mixin
 	}
 }
 
+@keyframes fadeOutDown {
+	from {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
 
 @keyframes fadeInRight {
 	from {
