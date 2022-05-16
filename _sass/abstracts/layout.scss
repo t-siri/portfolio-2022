@@ -46,6 +46,9 @@ body {
 		padding: $space-md;
 		overflow-y: scroll;
 		max-width: 1200px;
+		@include media(smd) {
+			height: calc((var(--vh, 1vh) * 100) - 90px);
+		}
 	}
 	&:not(.home-page) {
 		@include media(smd) {
