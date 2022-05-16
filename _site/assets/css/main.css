@@ -261,9 +261,7 @@ body { display: grid; grid-template-areas: "content nav"; grid-template-columns:
 
 body .content { grid-area: content; padding: calc(2 * 1rem); overflow-y: scroll; max-width: 1200px; }
 
-@media (max-width: 950px) { body .content { height: calc((var(--vh, 1vh) * 100) - 90px); } }
-
-@media (max-width: 950px) { body:not(.home-page) { grid-template-areas: "content" "nav"; grid-template-columns: 1fr; grid-template-rows: 1fr auto; } body:not(.home-page) .content { height: calc(100vh - 80px); } }
+@media (max-width: 950px) { body:not(.home-page) { grid-template-areas: "content" "nav"; grid-template-columns: 1fr; grid-template-rows: 1fr auto; } body:not(.home-page) .content { height: calc((var(--vh, 1vh) * 100) - 80px); } }
 
 body.home-page { grid-template-areas: "nav content"; grid-template-columns: 1fr auto; }
 
