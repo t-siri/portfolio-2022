@@ -1,6 +1,9 @@
 .experience-page {
     .experience__timeline {
         padding-left: 6rem;
+        @include media(smd) {
+            padding-left: 4.5rem;
+        }
         > div {
             padding: 3rem 0;
             position: relative;

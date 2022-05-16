@@ -993,6 +993,8 @@ hamburger and slide out navigation */
 
 .experience-page .experience__timeline { padding-left: 6rem; }
 
+@media (max-width: 950px) { .experience-page .experience__timeline { padding-left: 4.5rem; } }
+
 .experience-page .experience__timeline > div { padding: 3rem 0; position: relative; opacity: 1; }
 
 .experience-page .experience__timeline > div:after { height: 100%; content: ""; width: 10px; background-color: #151515; position: absolute; z-index: -2; left: -60px; top: 45px; }
