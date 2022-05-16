@@ -34,6 +34,13 @@ body {
 	grid-template-areas: "content nav";
 	grid-template-columns: 2fr 200px;
 	height: 100vh;
+	.content {
+		grid-area: content;
+		padding: $space-md;
+		height: calc(var(--vh, 1vh) * 100);
+		overflow-y: scroll;
+		max-width: 1200px;
+	}
 	&:not(.home-page) {
 		@include media(smd) {
 			grid-template-areas: "content" "nav";
@@ -43,13 +50,6 @@ body {
 				height: calc(100vh - 80px);
 			}
 		}
-	}
-	.content {
-		grid-area: content;
-		padding: $space-md;
-		height: 100vh;
-		overflow-y: scroll;
-		max-width: 1200px;
 	}
 	&.home-page {
 		grid-template-areas: "nav content";
