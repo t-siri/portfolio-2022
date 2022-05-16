@@ -1,13 +1,15 @@
 .work-page,
 .home-page {
     .work-item-wrapper {
+        @include transform-timing(1s);
         display: grid;
         grid-template-areas: "img info";
         grid-template-columns: 1fr 1fr;
         margin: 3rem 0;
         align-items: center;
-        opacity: 0.7;
-        &:hover {
+        opacity: 0.8;
+        &:hover,
+        &:active {
             opacity: 1;
         }
         * {
@@ -26,6 +28,19 @@
             overflow: hidden;
             border: 10px solid $grey-6;
             grid-area: img;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-min(xl) {
+                width: 40vw;
+                height: auto;
+                border: none;
+                img {
+                    width: 40vw;
+                    height: auto;
+                }
+            }
             // @include transform-timing(1s);
             // &:hover {
             //     background-color: $color-brand-01;
@@ -51,6 +66,11 @@
     }
 }
 .work-page {
+    .content {
+        @include media-min(xl) {
+            max-width: unset;
+        }
+    }
     .work-item-wrapper {
         @include media-min(smd) {
             @include transform-timing(1s);
@@ -58,7 +78,6 @@
         @include media(smd) {
             grid-template-areas: "img" "info";
             grid-template-columns: 1fr;
-            opacity: 0.9;
         }
         &:nth-of-type(odd) {
             grid-template-areas: "info img";

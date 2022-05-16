@@ -922,7 +922,7 @@ hamburger and slide out navigation */
 .img-zoom.active .btn:before { mask: url(/assets/icon/x.svg); -webkit-mask: url(/assets/icon/x.svg); }
 
 /* Home page */
-.home-page .work-item-wrapper { -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease; display: grid; grid-template-areas: "img" "info"; grid-template-columns: 1fr; }
+.home-page .work-item-wrapper { display: grid; grid-template-areas: "img" "info"; grid-template-columns: 1fr; }
 
 .home-page .work-item-wrapper .work-img { width: 40vw; height: auto; border: none; }
 

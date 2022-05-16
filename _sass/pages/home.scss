@@ -1,7 +1,6 @@
 /* Home page */
 .home-page {
     .work-item-wrapper {
-        @include transform-timing(1s);
         &:hover {
         }
         display: grid;
