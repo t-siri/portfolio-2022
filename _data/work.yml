@@ -1,3 +1,13 @@
+- name: Steer Clear
+  type: Design
+  url: /work-steer-clear
+  img: sc-1
+  desc: Steer Clear is an application that I have designed and scoped on my own. It's a passion project of mine that I want to share with multiple people struggling with the transparency of ingredients being used in products.
+- name: Belle Up
+  type: Design
+  url: /work-belle-up
+  img: bu-1
+  desc: Belle Up is a beauty application project that I had the opportunity to scope and design with my clients. The goal of this product is to provide a platform for beauticians to create their services where-ever and whenever they choose to do so.
 - name: YouTrumpet
   type: Design
   url: /work-you-trumpet
