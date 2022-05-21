@@ -1067,11 +1067,9 @@ hamburger and slide out navigation */
 
 .work-page .work-item-wrapper.scroll-animation-true, .home-page .work-item-wrapper.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
 
-.work-page .work-item-wrapper .work-img, .home-page .work-item-wrapper .work-img { height: 400px; width: 400px; overflow: hidden; border: 10px solid #151515; grid-area: img; padding: 5px; display: flex; align-items: center; justify-content: center; }
+.work-page .work-item-wrapper .work-img, .home-page .work-item-wrapper .work-img { width: 40vw; height: auto; overflow: hidden; grid-area: img; padding: 5px; display: flex; align-items: center; justify-content: center; }
 
-@media (min-width: 1600px) { .work-page .work-item-wrapper .work-img, .home-page .work-item-wrapper .work-img { width: 40vw; height: auto; border: none; } .work-page .work-item-wrapper .work-img img, .home-page .work-item-wrapper .work-img img { width: 40vw; height: auto; } }
-
-.work-page .work-item-wrapper .work-img img, .home-page .work-item-wrapper .work-img img { height: 100%; object-fit: cover; }
+.work-page .work-item-wrapper .work-img img, .home-page .work-item-wrapper .work-img img { width: 40vw; height: auto; height: 100%; object-fit: cover; }
 
 .work-page .work-item-wrapper .work-info, .home-page .work-item-wrapper .work-info { grid-area: info; padding: 0 2rem; }
 

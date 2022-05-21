@@ -23,30 +23,22 @@
         }
 
         .work-img {
-            height: 400px;
-            width: 400px;
+            width: 40vw;
+            height: auto;
             overflow: hidden;
-            border: 10px solid $grey-6;
             grid-area: img;
             padding: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            @include media-min(xl) {
-                width: 40vw;
-                height: auto;
-                border: none;
-                img {
-                    width: 40vw;
-                    height: auto;
-                }
-            }
             // @include transform-timing(1s);
             // &:hover {
             //     background-color: $color-brand-01;
             //     width: 80vw;
             // }
             img {
+                width: 40vw;
+                height: auto;
                 height: 100%;
                 object-fit: cover;
             }
