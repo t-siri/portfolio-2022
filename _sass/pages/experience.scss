@@ -27,7 +27,11 @@
                 opacity: 0;
             }
             &.scroll-animation-true {
-                @include fadeInUp(1s);
+                .date,
+                .job-title,
+                .job-desc {
+                    @include fadeInUp(1s);
+                }
             }
             .date {
                 display: flex;

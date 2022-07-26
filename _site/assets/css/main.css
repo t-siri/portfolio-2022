@@ -1005,7 +1005,7 @@ hamburger and slide out navigation */
 
 .experience-page .experience__timeline > div.scroll-animation-false { opacity: 0; }
 
-.experience-page .experience__timeline > div.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+.experience-page .experience__timeline > div.scroll-animation-true .date, .experience-page .experience__timeline > div.scroll-animation-true .job-title, .experience-page .experience__timeline > div.scroll-animation-true .job-desc { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
 
 .experience-page .experience__timeline > div .date { display: flex; align-items: center; margin-bottom: 0.5rem; }
 
