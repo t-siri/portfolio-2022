@@ -17,7 +17,7 @@
             {{page.type}}
             <p class="h2">{{page.title}}</p>
         </div>
-        {% if page.type=='Design'%}
+        {% if page.type=='Design' or 'Design & Business Analaysis'%}
         {% include common/des-setup.html %}
         {% endif %}
         {% if page.type=='Development'%}
