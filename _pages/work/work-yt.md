@@ -6,10 +6,12 @@ permalink: /work-you-trumpet
 img1: yt-1
 img2: yt-2
 img3: yt-3
-img4: yt-4
+img4: yt-8
 img5: yt-7
 img6: yt-6
 img7: yt-5
+img8: yt-4
+img9: yt-9
 ---
 
 {% contentfor introduction %}
