@@ -1,6 +1,6 @@
 ---
 layout: work-view
-type: Design & Business Analaysis
+type: Design & Product Owner
 title: STAKT
 permalink: /work-stakt
 img1: stakt-1
