@@ -1126,7 +1126,7 @@ hamburger and slide out navigation */
 
 .port-showcase-page .subsection.scroll-animation-false { opacity: 0; }
 
-.port-showcase-page .subsection.scroll-animation-true .date, .port-showcase-page .subsection.scroll-animation-true .job-title, .port-showcase-page .subsection.scroll-animation-true .job-desc { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+.port-showcase-page .subsection.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
 
 .port-showcase-page .subsection__img img { width: 25vw; }
 

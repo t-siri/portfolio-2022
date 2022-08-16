@@ -11,11 +11,7 @@
             opacity: 0;
         }
         &.scroll-animation-true {
-            .date,
-            .job-title,
-            .job-desc {
-                @include fadeInUp(1s);
-            }
+            @include fadeInUp(1s);
         }
 
         &__img {
