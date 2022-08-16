@@ -1120,7 +1120,7 @@ hamburger and slide out navigation */
 
 .home-page .work-item-wrapper .work-info { padding: 0; }
 
-.port-showcase-page .content { max-width: unset; }
+@media (min-width: 950px) { .port-showcase-page .content { max-width: unset; } }
 
 .port-showcase-page .scroll-animation-false { opacity: 0; }
 
@@ -1128,13 +1128,23 @@ hamburger and slide out navigation */
 
 .port-showcase-page .subsection { margin: 5rem auto; display: flex; align-items: center; justify-content: space-evenly; }
 
+@media (max-width: 950px) { .port-showcase-page .subsection { margin: 3rem auto; flex-direction: column; } }
+
 .port-showcase-page .subsection__img img { width: 25vw; }
+
+@media (max-width: 950px) { .port-showcase-page .subsection__img img { width: 100%; } }
 
 .port-showcase-page .subsection__imgs img { width: 40vw; }
 
+@media (max-width: 950px) { .port-showcase-page .subsection__imgs img { width: 100%; } }
+
 .port-showcase-page .subsection > div { width: 50%; }
 
+@media (max-width: 950px) { .port-showcase-page .subsection > div { width: 100%; } }
+
 .port-showcase-page .subsection > div ul { max-width: 30vw; }
+
+@media (max-width: 950px) { .port-showcase-page .subsection > div ul { max-width: unset; } }
 
 .port-showcase-page .btn-text { padding: 0 4rem; display: flex; justify-content: center; }
 

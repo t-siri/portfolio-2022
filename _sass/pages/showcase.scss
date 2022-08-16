@@ -1,6 +1,8 @@
 .port-showcase-page {
     .content {
-        max-width: unset;
+        @include media-min(smd) {
+            max-width: unset;
+        }
     }
 
     .scroll-animation-false {
@@ -14,23 +16,39 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include media(smd) {
+            margin: 3rem auto;
+            flex-direction: column;
+        }
 
         &__img {
             img {
                 width: 25vw;
+                @include media(smd) {
+                    width: 100%;
+                }
             }
         }
 
         &__imgs {
             img {
                 width: 40vw;
+                @include media(smd) {
+                    width: 100%;
+                }
             }
         }
         > div {
             width: 50%;
+            @include media(smd) {
+                width: 100%;
+            }
 
             ul {
                 max-width: 30vw;
+                @include media(smd) {
+                    max-width: unset;
+                }
             }
         }
     }
