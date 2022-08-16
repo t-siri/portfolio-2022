@@ -2,17 +2,18 @@
     .content {
         max-width: unset;
     }
+
+    .scroll-animation-false {
+        opacity: 0;
+    }
+    .scroll-animation-true {
+        @include fadeInUp(1s);
+    }
     .subsection {
         margin: 5rem auto;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        &.scroll-animation-false {
-            opacity: 0;
-        }
-        &.scroll-animation-true {
-            @include fadeInUp(1s);
-        }
 
         &__img {
             img {

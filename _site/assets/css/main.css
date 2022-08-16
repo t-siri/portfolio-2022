@@ -1122,11 +1122,11 @@ hamburger and slide out navigation */
 
 .port-showcase-page .content { max-width: unset; }
 
+.port-showcase-page .scroll-animation-false { opacity: 0; }
+
+.port-showcase-page .scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+
 .port-showcase-page .subsection { margin: 5rem auto; display: flex; align-items: center; justify-content: space-evenly; }
-
-.port-showcase-page .subsection.scroll-animation-false { opacity: 0; }
-
-.port-showcase-page .subsection.scroll-animation-true { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
 
 .port-showcase-page .subsection__img img { width: 25vw; }
 
