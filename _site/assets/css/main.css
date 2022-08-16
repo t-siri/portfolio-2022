@@ -1120,4 +1120,22 @@ hamburger and slide out navigation */
 
 .home-page .work-item-wrapper .work-info { padding: 0; }
 
+.port-showcase-page .content { max-width: unset; }
+
+.port-showcase-page .subsection { margin: 5rem auto; display: flex; align-items: center; justify-content: space-evenly; }
+
+.port-showcase-page .subsection.scroll-animation-false { opacity: 0; }
+
+.port-showcase-page .subsection.scroll-animation-true .date, .port-showcase-page .subsection.scroll-animation-true .job-title, .port-showcase-page .subsection.scroll-animation-true .job-desc { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; animation-duration: 1s; }
+
+.port-showcase-page .subsection__img img { width: 25vw; }
+
+.port-showcase-page .subsection__imgs img { width: 40vw; }
+
+.port-showcase-page .subsection > div { width: 50%; }
+
+.port-showcase-page .subsection > div ul { max-width: 30vw; }
+
+.port-showcase-page .btn-text { padding: 0 4rem; display: flex; justify-content: center; }
+
 /*# sourceMappingURL=main.css.map */

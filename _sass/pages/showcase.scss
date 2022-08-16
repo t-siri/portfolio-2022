@@ -1,0 +1,45 @@
+.port-showcase-page {
+    .content {
+        max-width: unset;
+    }
+    .subsection {
+        margin: 5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        &.scroll-animation-false {
+            opacity: 0;
+        }
+        &.scroll-animation-true {
+            .date,
+            .job-title,
+            .job-desc {
+                @include fadeInUp(1s);
+            }
+        }
+
+        &__img {
+            img {
+                width: 25vw;
+            }
+        }
+
+        &__imgs {
+            img {
+                width: 40vw;
+            }
+        }
+        > div {
+            width: 50%;
+
+            ul {
+                max-width: 30vw;
+            }
+        }
+    }
+    .btn-text {
+        padding: 0 4rem;
+        display: flex;
+        justify-content: center;
+    }
+}

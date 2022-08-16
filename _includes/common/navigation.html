@@ -9,8 +9,9 @@
 	</a>
 	{% endif %}
 	<ul {% if page.url == '/' %} class="nav-home" {% endif %} {% if page.url != '/' %} class="nav-page" {% endif %}>
-		{% if page.url != '/' %}<li><a href="/" aria-label="about page" {% if page.url == '/' %}class="active"
-				{% endif %}><span class="nav__num">00
+		{% if page.url != '/' %}<li><a href="/" aria-label="home page"
+				{% if page.url == '/' or page.url contains '/portfolio-showcase'  %}class="active" {% endif %}><span
+					class="nav__num">00
 				</span> Home</a>
 		</li>{% endif %}
 		{% if page.url != '/experience' %}<li><a href="/experience" aria-label="about page"

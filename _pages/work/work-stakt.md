@@ -15,9 +15,9 @@ img9: stakt-6
 ---
 
 {% contentfor introduction %}
-STAKT is a cyrpto trading application based in Australia with a goal to cater towards users with little to no knowledge in the industry but wants to invest in cryptocurrency. During my employment with PatientZero, I had the opportunity to work on this project as a Business Analyst and a Product Designer. Given it was a GreenField project, there were multiple workshops that were required to accomplish the desired outcome of the product.
+STAKT is a cyrpto trading application based in Australia with a goal to cater towards users with little to no knowledge in the industry but wants to invest in cryptocurrency. During my employment with PatientZero, I had the opportunity to work on this project as a Product Owner and a Product Designer. Given it was a GreenField project, there were multiple workshops that were required to accomplish the desired outcome of the product.
 
-In addition to designing the product, I had to balance between the importance of design and producing a minimum viable product. As this project immediately moved from design straight to development where I was the Business Analyst, it was very important to ensure that consistency of designs occur at the start of the project.
+In addition to designing the product, I had to balance between the importance of design and producing a minimum viable product. As this project immediately moved from design straight to development where I was the Product Owner, it was very important to ensure that consistency of designs occur at the start of the project.
 {% endcontentfor %}
 
 {% contentfor problem %}
@@ -47,6 +47,6 @@ The clients provided their branding guidelines which allowed me to produce the k
 
 Once these components were identified, I produced high fidelity screens from each wireframe. User testing were conducted on the main screens and given that the wireframes were mainly re-iterated, there were only minor tweaks required for the hi-fi designs.
 
-At the same time, I was working in parallel as a business analyst and broke these screens down into user stories and tickets for development. I also had to order the backlog according to dependencies and pre-requisites of each feature.
+At the same time, I was working in parallel as a Product Owner and broke these screens down into user stories and tickets for development. I also had to order the backlog according to dependencies and pre-requisites of each feature.
 
 {% endcontentfor %}
