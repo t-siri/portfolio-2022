@@ -53,8 +53,13 @@
         }
     }
     .btn-text {
-        padding: 0 4rem;
         display: flex;
         justify-content: center;
+        &:first-of-type {
+            padding-right: 4rem;
+            @include media(smd) {
+                padding-right: 2rem;
+            }
+        }
     }
 }

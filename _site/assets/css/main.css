@@ -1146,6 +1146,10 @@ hamburger and slide out navigation */
 
 @media (max-width: 950px) { .port-showcase-page .subsection > div ul { max-width: unset; } }
 
-.port-showcase-page .btn-text { padding: 0 4rem; display: flex; justify-content: center; }
+.port-showcase-page .btn-text { display: flex; justify-content: center; }
+
+.port-showcase-page .btn-text:first-of-type { padding-right: 4rem; }
+
+@media (max-width: 950px) { .port-showcase-page .btn-text:first-of-type { padding-right: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
