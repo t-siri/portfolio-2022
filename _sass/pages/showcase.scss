@@ -31,6 +31,7 @@
         }
 
         &__imgs {
+            width: 50%;
             img {
                 width: 40vw;
                 @include media(smd) {
@@ -38,8 +39,8 @@
                 }
             }
         }
-        > div {
-            width: 50%;
+        &__description {
+            width: 35%;
             @include media(smd) {
                 width: 100%;
             }

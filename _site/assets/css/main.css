@@ -1134,17 +1134,19 @@ hamburger and slide out navigation */
 
 @media (max-width: 950px) { .port-showcase-page .subsection__img img { width: 100%; } }
 
+.port-showcase-page .subsection__imgs { width: 50%; }
+
 .port-showcase-page .subsection__imgs img { width: 40vw; }
 
 @media (max-width: 950px) { .port-showcase-page .subsection__imgs img { width: 100%; } }
 
-.port-showcase-page .subsection > div { width: 50%; }
+.port-showcase-page .subsection__description { width: 35%; }
 
-@media (max-width: 950px) { .port-showcase-page .subsection > div { width: 100%; } }
+@media (max-width: 950px) { .port-showcase-page .subsection__description { width: 100%; } }
 
-.port-showcase-page .subsection > div ul { max-width: 30vw; }
+.port-showcase-page .subsection__description ul { max-width: 30vw; }
 
-@media (max-width: 950px) { .port-showcase-page .subsection > div ul { max-width: unset; } }
+@media (max-width: 950px) { .port-showcase-page .subsection__description ul { max-width: unset; } }
 
 .port-showcase-page .btn-text { display: flex; justify-content: center; }
 
