@@ -15,7 +15,7 @@ gem "minima", "~> 2.5"
 
 # For execjs issue
 gem "execjs"
-gem "therubyracer"
+# gem "therubyracer"
 
 # Faster liquid processing
 gem "liquid-c"
